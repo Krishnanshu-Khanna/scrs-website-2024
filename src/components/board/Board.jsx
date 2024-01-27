@@ -16,7 +16,7 @@ const Board = () => {
 						transition={{duration: 0.5}}>
 						<div className='pic'>
 							<img
-								src='board24/dhruvSharma.jpg'
+								src='board24/dhruv1.jpg'
 								alt=''
 							/>
 						</div>
