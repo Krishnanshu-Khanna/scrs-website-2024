@@ -1,0 +1,118 @@
+@import "../../app.scss";
+
+.board {
+	margin-top: 10px;
+	padding: 20px 0px;
+	color: aliceblue;
+	@include mobile{
+		// height: ;
+	}
+	.header {
+		text-align: center;
+		margin: 20px 0px 40px;
+		h1 {
+			font-size: 50px;
+			margin: 20px 0;
+			letter-spacing: 4px;
+			font-weight: 600;
+		}
+	}
+	.wrapper {
+		max-width: 1600px;
+		margin: 0px auto;
+		.row {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			.card {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 275px;
+				width: 230px;
+				margin: 40px;
+				cursor: pointer;
+				overflow: hidden;
+				border-radius: 10px;
+				box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+				.pic {
+					width: 100%;
+					height: 100%;
+					img {
+						object-fit: contain;
+						width: 100%;
+					}
+				}
+				.details {
+					position: absolute;
+					bottom: -77px;
+					width: 100%;
+					height: 120px;
+					z-index: 1;
+					flex-direction: column;
+					backdrop-filter: blur(15px);
+					box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+					border: 1px solid rgba(225, 225, 225, 0.1);
+					border-radius: 10px;
+					.detail_container {
+						text-align: center;
+						h3,
+						span {
+							text-transform: uppercase;
+							color: #fff;
+							letter-spacing: 4px;
+							font-weight: 500;
+							margin: 20px 0 5px;
+							line-height: 1.1em;
+							font-size: 12px;
+						}
+						span {
+							font-size: 14px;
+							font-weight: 300;
+							text-transform: initial;
+							color: #fff;
+							letter-spacing: 2px;
+						}
+					}
+					.social {
+						position: relative;
+						bottom: -10px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						li {
+							list-style: none;
+							margin: 0 10px;
+							opacity: 0;
+							a {
+								text-decoration: none;
+								color: white;
+								font-size: 18px;
+							}
+						}
+					}
+				}
+			}
+			.card:hover {
+				.details {
+					bottom: 0;
+					transition-delay: 0s;
+					.detail_container {
+						h3,
+						span {
+							opacity: 1;
+						}
+					}
+					.social {
+						li {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
