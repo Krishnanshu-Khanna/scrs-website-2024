@@ -70,11 +70,11 @@ const Hero = () => {
 				animate='animate'>
 				Fuzzy logic AI/ML DSA WEBDev AppDev Figma Canva
 			</motion.div>
-			<div className='imageContainer'>
+			{/* <div className='imageContainer'>
 				{/* <Canvas camera={{position: [10.0, 10.0, 99999.0]}}>
 					<Blob/>
-				</Canvas> */}
-			</div>
+				</Canvas> 
+			</div> */}
 		</div>
 	);
 };

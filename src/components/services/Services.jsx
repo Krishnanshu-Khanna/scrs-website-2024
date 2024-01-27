@@ -4,7 +4,7 @@ import {motion, useInView} from "framer-motion";
 
 const variants = {
 	initial: {
-		x: -500,
+		x: -100,
 		y: 100,
 		opacity: 0,
 	},
@@ -21,7 +21,7 @@ const variants = {
 
 const Services = () => {
 	const ref = useRef();
-  const isInView = useInView(ref, {margin: "-100px"});
+	const isInView = useInView(ref, {margin: "0px"});
 
 	return (
 		<motion.div
@@ -30,7 +30,7 @@ const Services = () => {
 			initial='initial'
 			whileInView='animate'
 			ref={ref}
-			animate={isInView && "animate"}>
+			animate="animate">
 			<motion.div
 				className='textContainer'
 				variants={variants}>
