@@ -27,6 +27,9 @@
         align-items: center;
         text-align: center;
       }
+      @include tablet{
+        padding-left: 25px;
+      }
 
       h2 {
         font-size: 30px;
