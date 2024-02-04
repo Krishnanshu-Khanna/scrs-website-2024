@@ -100,7 +100,7 @@ const Board = () => {
 						transition={{duration: 0.5}}>
 						<div className='pic'>
 							<img
-								src='board24/bkg1.png'
+								src='board24/k1.png'
 								alt=''
 							/>
 						</div>
