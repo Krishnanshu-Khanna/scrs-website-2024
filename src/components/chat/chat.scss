@@ -1,0 +1,145 @@
+@import "../../app.scss";
+
+.chat-bot {
+	z-index: 999;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	width: 470px;
+	height: fit-content;
+	background-color: transparent;
+	border-radius: 25px;
+	cursor: pointer;
+	@include mobile {
+		width: 260px;
+		margin-left: 30px;
+	}
+	button {
+		background-color: transparent;
+		color: white;
+		border: none;
+		outline: none;
+		background: none;
+		align-self: flex-end;
+		margin-left: 10px;
+		.chat-icon {
+			height: 30px;
+			width: 30px;
+		}
+	}
+
+	.hidden {
+		display: none;
+	}
+	.chat {
+		background-color: rgba(255, 255, 255, 0.438);
+		color: black;
+		border: solid black 2px;
+		border-radius: 25px;
+		border-bottom-right-radius: 0;
+		margin-right: 30px;
+
+		header {
+			background-color: #0c0c1d;
+			color: white;
+			text-align: center;
+			padding: 10px;
+			border-radius: 22px;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		.chatbox {
+			padding: 10px;
+			height: 350px;
+			overflow: auto;
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			.chat-outgoing {
+				display: flex;
+				flex-direction: column;
+			}
+			.titlebot {
+				display: flex;
+				color: rgb(53, 0, 53);
+				font-weight: 900;
+				margin-bottom: 5px;
+				.robot {
+					color: white;
+					background-color: rgb(55, 0, 55);
+					height: 20px;
+					width: 20px;
+					padding: 10px;
+					border-radius: 100%;
+					margin-right: 10px;
+				}
+				.bottitle {
+					margin: 3px 0;
+					font-size: 16px;
+				}
+			}
+			.usermsg {
+				display: flex;
+				justify-content: end;
+
+				.user {
+					color: white;
+					background-color: rgb(34, 95, 200);
+					height: 20px;
+					width: 20px;
+					padding: 10px;
+					border-radius: 100%;
+					margin-left: 10px;
+				}
+				.usertitle {
+					font-size: 16px;
+					color: rgb(3, 37, 94);
+				}
+			}
+			.msg {
+				background-color: antiquewhite;
+				border-radius: 10px;
+				width: fit-content;
+				border-bottom-left-radius: 0;
+				padding: 10px;
+				margin-left: 40px;
+			}
+			.outgoing-msg {
+				background-color: antiquewhite;
+				color: black;
+				right: 0;
+				border-radius: 10px;
+				border-bottom-right-radius: 0;
+				padding: 10px;
+				margin-right: 40px;
+				align-self: flex-end;
+			}
+		}
+		.chat-input {
+			input {
+				width: 375px;
+				height: 35px;
+				margin: 12px 10px;
+				font-size: 17px;
+				text-align: center;
+				border: 2px solid black;
+				outline: white 1px solid;
+				@include mobile {
+					width: 150px;
+				}
+			}
+			.paperplane {
+				color: rgb(42, 0, 87);
+				height: 30px;
+				width: 30px;
+				margin-right: 3px;
+				font-size: 25px;
+				display: inline-block;
+			}
+		}
+	}
+}
