@@ -1,4 +1,3 @@
-// BoardMember.js
 import {motion} from "framer-motion";
 
 const BoardMember = ({name, position, imgSrc, socialLinks}) => {

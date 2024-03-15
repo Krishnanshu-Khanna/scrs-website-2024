@@ -1,7 +1,5 @@
-import React from "react";
 import "./board.scss";
 import BoardMember from "./BoardMember";
-import {motion} from "framer-motion";
 
 const boardMembersData = [
     {
