@@ -26,7 +26,7 @@ const items = [
 	},
 	{
 		id: 4,
-		title: "150+ Students",
+		title: "500+ Students",
 		img: "projects/image6.jpg",
 		desc:
 			"Impressive showcase featuring 150+ students highlighting our collective strengths. A vibrant display of talents, achievements, and diverse skills underscored the unity and prowess within the student community.",
