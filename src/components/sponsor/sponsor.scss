@@ -1,0 +1,75 @@
+@import "../../app.scss";
+
+.sponsor-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  height: 100dvh;
+  padding: 50px 20px;
+  background-color: #0c0c1d;
+  border-radius: 15px;
+  color: aliceblue;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); 
+
+  h2 {
+    font-size: 50px;
+    margin: 0 0 40px 0;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: aliceblue;
+
+    @include mobile {
+      font-size: 30px;
+      margin: 80px 0 40px 0;
+    }
+  }
+
+  .sponsor-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 0; 
+
+    @include mobile {
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 30px;
+    }
+
+    .sponsor-logo {
+      background: #1a1a2e;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+      
+      &:hover {
+        transform: scale(1.1); 
+        box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.5); 
+      }
+
+      img {
+        width: 300px;
+        height: 150px;
+        transition: filter 0.4s ease-in-out;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
+
+        @include mobile {
+          width: 200px;
+          height: 100px; 
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    padding: 30px 10px;
+  }
+}

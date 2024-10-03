@@ -8,6 +8,7 @@ import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 import Chat from "./components/chat/Chat";
+import Sponsor from "./components/sponsor/Sponsor";
 
 const App = () => {
 	return (
@@ -20,6 +21,7 @@ const App = () => {
 			<section id='About Us'><Parallax type='portfolio'/></section>
 			<Portfolio/>
 			<section id='Team'><Board/></section>
+			<section id='Sponsors'><Sponsor/></section>
 			<section id='Contact'><Contact/></section>
 		</div>
 	);
